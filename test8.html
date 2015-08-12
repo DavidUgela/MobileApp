@@ -1,0 +1,144 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="themes/Foxy.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+    [data-role=page]{height: 100% !important; position:relative !important;}
+    [data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
+    [data-role=content]{width: 90% margin:0 auto;}
+    
+</style>
+</head>
+<body>
+
+    
+    <div data-role="page" id="home">
+	<div data-role = "header">
+	<h1>Home</h1>
+    </div>
+	<div data-role="content">
+	<p>
+	Tap anywhere on the page
+	</p>
+	<p id="status"></p>
+	</div>
+	    <div data-role="footer" date-position="fixed" data-theme="c">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="alert ">Home</a></li>
+            <li><a href="#" data-icon="alert ">Contact</a></li>
+            <li><a href="#" data-icon="alert ">about us</a></li>
+            <li><a href="#" data-icon="alert ">we do help</a></li>
+        </ul>
+    </div>
+    </div>
+	
+	</div>
+	
+	<!--end of home page-->
+	
+	    <div data-role="page" id="contact">
+	<div data-role = "header">
+	<h1>Contact</h1>
+    </div>
+	<div data-role="content">
+	<p>
+			Tap anywhere on the page
+	</p>
+	<p id="status"></p>
+	</div>
+	    <div data-role="footer" date-position="fixed" data-theme="c">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="alert ">Home</a></li>
+            <li><a href="#" data-icon="alert ">Contact</a></li>
+            <li><a href="#" data-icon="alert ">about us</a></li>
+            <li><a href="#" data-icon="alert ">we do help</a></li>
+        </ul>
+    </div>
+    </div>
+	
+	</div>
+
+	<!--end of contact page-->
+	
+		    <div data-role="page" id="aboutus">
+	<div data-role = "header">
+	<h1>about Us</h1>
+    </div>
+	<div data-role="content">
+	<p>
+			Tap anywhere on the page
+	</p>
+	<p id="status"></p>
+	</div>
+	    <div data-role="footer" date-position="fixed" data-theme="c">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="home.html" data-icon="alert ">Home</a></li>
+            <li><a href="#contct" data-icon="alert ">Contact</a></li>
+            <li><a href="#aboutus" data-icon="alert ">about us</a></li>
+            <li><a href="#wedohelp" data-icon="alert ">we do help</a></li>
+        </ul>
+    </div>
+    </div>
+	
+	</div>
+	
+		<!--end of aboutus page-->
+	
+		    <div data-role="page" id="wedohelp">
+	<div data-role = "header">
+	<h1>we do help</h1>
+    </div>
+	<div data-role="content">
+	<p>
+			Tap anywhere on the page
+	</p>
+	<p id="status"></p>
+	</div>
+	    <div data-role="footer" date-position="fixed" data-theme="c">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="alert ">Home</a></li>
+            <li><a href="#" data-icon="alert ">Contact</a></li>
+            <li><a href="#" data-icon="alert ">about us</a></li>
+            <li><a href="#" data-icon="alert ">we do help</a></li>
+        </ul>
+    </div>
+    </div>
+	
+	</div>
+	
+	<script>
+	$("body").bind("tap", function(e){
+	 $("#status").text("you just did it");
+	});
+	
+    $("body").bind("taphold", function(e){
+	 $("#status").text("you just did it event");
+	});
+	$("body").bind("swipe", function(e){
+	 $("#status").append("you just did it event");
+	});
+	$("body").bind("swipeleft", function(e){
+	 $("#status").append("you just did it event");
+	});
+    $("body").bind("swiperight", function(e){
+	 $("#status").append("you just did it event");
+	});
+	
+	</script>
+    
+
+
+
+
+</body>
+    
+</html>
